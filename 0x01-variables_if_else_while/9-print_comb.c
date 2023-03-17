@@ -1,8 +1,3 @@
-/*
- * File: 9-print_comb.c
- * Auth: Prince Magutshwa
- */
-
 #include <stdio.h>
 
 /**
