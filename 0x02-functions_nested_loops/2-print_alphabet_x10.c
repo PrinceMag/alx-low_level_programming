@@ -1,23 +1,20 @@
-/*
- * File: 2-print_alphabet.c
- * Auth: Brennan D Baraban
- */
-
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Prints the alphabet in lowercase.
- *
- * Return: Always 0.
+ * print_alphabet_x10 - print 1 times the alphabet
+ * Description: print the alphabet 10 times
+ * Return: Nothing
  */
-int main(void)
+
+void print_alphabet_x10(void)
 {
-	char letter;
+	char counter;
+	char lowerCaseLetter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
-	putchar('\n');
-
-	return (0);
+	for (counter = 0; counter <= 9; counter++)
+	{
+		for (lowerCaseLetter = 'a'; lowerCaseLetter <= 'z'; lowerCaseLetter++)
+			_putchar(lowerCaseLetter);
+		_putchar('\n');
+	}
 }
