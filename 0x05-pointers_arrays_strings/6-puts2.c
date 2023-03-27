@@ -1,26 +1,18 @@
 #include "main.h"
 /**
- * rev_string - function
+ * puts2 - function
  *
- * @s: pointer of parameter
+ * @str: pointer of parameter
  */
-void rev_string(char *s)
+void puts2(char *str)
 {
-	char temp;
-	int length = 0;
-	int b = 0;
-	int e;
+	int i = 0;
 
-	while (s[length] != '\0')
-		length++;
-	e = length - 1;
-	length /= 2;
-	while (length--)
+	while (str[i] != '\0')
 	{
-		temp = s[b];
-		s[b] = s[e];
-		s[e] = temp;
-		b++;
-		e--;
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		i++;
 	}
+	_putchar(10);
 }
